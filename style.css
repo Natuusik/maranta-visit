@@ -107,8 +107,19 @@ footer {
   .container {
     grid-template-columns: 1fr;
   }
+
+  .item {
+    transition: transform 0.3s ease; /* плавная анимация */
+  }
+
+  .item:hover {
+    transform: scale(0,5); /* увеличиваем на 30% */
+    z-index: 10;           /* чтобы не перекрывался соседями */
+  }
 }
 
+
 }
+
 
 
